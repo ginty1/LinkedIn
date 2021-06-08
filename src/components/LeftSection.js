@@ -50,7 +50,7 @@ function LeftSection(props) {
     )
 }
 const Container=styled.div`
-grid-area: LeftSide;
+grid-area: leftSection;
 `;
 
 const ArtCard=styled.div`
