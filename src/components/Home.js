@@ -16,16 +16,16 @@ const Home = (props) => {
         </p>
       </Section>
       <Layout>
-       <LeftSection/>
-       <MainSection/>
-       <RightSection/>
+        <LeftSection />
+        <MainSection />
+        <RightSection />
       </Layout>
     </Container>
   );
 };
 
 const Container = styled.div`
-  padding-top: 72px;
+  padding-top: 52px;
   max-width: 100%;
 `;
 
@@ -63,7 +63,7 @@ const Section = styled.section`
 
 const Layout = styled.div`
   display: grid;
-  grid-template-areas: "leftside main rightside";
+  grid-template-areas: "leftSection MainSection RightSection";
   grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
   column-gap: 25px;
   row-gap: 25px;
