@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Header from "./Header";
 import LeftSection from "./LeftSection";
 import MainSection from "./MainSection";
 import RightSection from "./RightSection";
