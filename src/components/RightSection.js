@@ -65,6 +65,7 @@ const Title = styled.div`
 `;
 const FeedList = styled.li`
   margin-top: 16px;
+  list-style: none;
   li {
     display: flex;
     align-items: center;
