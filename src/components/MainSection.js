@@ -12,21 +12,21 @@ function MainSection() {
         </div>
         <div>
           <button>
-            <img src="" alt="" />
+            <img src="/img/photo-icon.png" alt="" />
             <span>photo</span>
           </button>
 
           <button>
-            <img src="/img/video-icon.svg" alt="" />
+            <img src="/img/video-icon.png" alt="" />
             <span>Video</span>
           </button>
 
           <button>
-            <img src="/img/event-icon.svg" alt="" />
+            <img src="/img/event-icon.jpg" alt="" />
             <span>Event</span>
           </button>
           <button>
-            <img src="/img/article-icon.svg" alt="" />
+            <img src="/img/article-icon.png" alt="" />
             <span>Write article</span>
           </button>
         </div>
@@ -43,9 +43,45 @@ function MainSection() {
               </div>
             </a>
             <button>
-              <img src="elipsis image here" alt="" />
+              <img src="/img/ellipsis-icon.png" alt="" />
             </button>
           </SharedActor>
+          <Description>Description</Description>
+          <SharedImg>
+            <a>
+              <img src="/img/ginty1.jpg" alt="" />
+            </a>
+          </SharedImg>
+          <SocialCounts>
+            <li>
+              <button>
+                <img src="/img/thumbs-icon.png" alt="" />
+                <img src="/img/clap-icon.jpg" alt="" />
+                <span>75</span>
+              </button>
+            </li>
+            <li>
+              <a>2 comments</a>
+            </li>
+          </SocialCounts>
+          <SocialActions>
+            <button>
+              <img src="/img/like-icon.png" alt="" />
+              <span>Like</span>
+            </button>
+            <button>
+              <img src="/img/comment-icon.png" alt="" />
+              <span>comments</span>
+            </button>
+            <button>
+              <img src="/img/share-icon.png" alt="" />
+              <span>share</span>
+            </button>
+            <button>
+              <img src="/img/send-icon.png" alt="" />
+              <span>Send</span>
+            </button>
+          </SocialActions>
         </Article>
       </div>
     </Container>
@@ -109,7 +145,12 @@ const ShareBox = styled(CommonCard)`
       padding-bottom: 4px;
 
       button {
+        font-weight: 600;
         margin: 0 4px 0 -2px;
+        img {
+          width: 22px;
+          height: 30px;
+        }
       }
       span {
         color: #70b5f9;
@@ -121,6 +162,12 @@ const Article = styled(CommonCard)`
   padding: 0;
   margin: 0 0 8px ov;
   overflow: visible;
+  button {
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
 `;
 const SharedActor = styled.div`
   padding-right: 40px;
@@ -165,9 +212,60 @@ const SharedActor = styled.div`
     right: 12px;
     top: 0;
     background: transparent;
-    //un comment when you get the elipsis image
-    /* border: none;
-    outline: none; */
+    border: none;
+    outline: none;
+  }
+`;
+const Description = styled.div`
+  padding: 0 16px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  text-align: left;
+`;
+const SharedImg = styled.div`
+  margin-top: 8px;
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: #f9fafb;
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+`;
+const SocialCounts = styled.ul`
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  overflow: auto;
+  margin: 0 16px;
+  padding: 8px 0;
+  list-style: none;
+  li {
+    margin-right: 5px;
+    font-size: 12px;
+    button {
+      display: flex;
+    }
+  }
+`;
+const SocialActions = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  min-height: 40px;
+  padding: 4px 8px;
+  button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    color: #0a66c2;
+    @media (min-width: 768px) {
+      margin-left: 8px;
+    }
   }
 `;
 export default MainSection;
