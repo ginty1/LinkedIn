@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="like-icon" transform="translate(-298 -508)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(298 508)" fill="#1492e6" stroke="#1492e6" stroke-width="1">
+      <circle cx="10" cy="10" r="10" stroke="none"/>
+      <circle cx="10" cy="10" r="9.5" fill="none"/>
+    </g>
+    <path id="path" d="M345.6,1193.545v-6.207h-2.172v6.207Zm-12-5.69h0v1.034a1.229,1.229,0,0,0,.054.414l1.629,3.621a.95.95,0,0,0,.977.621h4.887a1.1,1.1,0,0,0,.76-.31,1,1,0,0,0,.326-.724v-5.172a1,1,0,0,0-.326-.724l-3.584-3.414-.6.569a.648.648,0,0,0-.217.517v.155l.543,2.379h-3.421a1.1,1.1,0,0,0-.76.31A.941.941,0,0,0,333.6,1187.855Z" transform="translate(-32.7 -671.2)" fill="#fff"/>
+  </g>
+</svg>
