@@ -4,7 +4,7 @@ import MainSection from "./MainSection";
 import RightSection from "./RightSection";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-
+import Reducer from "../Reducer";
 const Home = (props) => {
   return (
     <Container>
@@ -13,6 +13,7 @@ const Home = (props) => {
         <h5>
           <a>Hiring in a hurry? - </a>
         </h5>
+        <Reducer />
         <p>
           Find talented pros in record time with Upwork and keep business
           moving.
